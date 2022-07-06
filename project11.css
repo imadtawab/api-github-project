@@ -1,0 +1,112 @@
+/***************************
+*********Start Global*******
+***************************/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    font-family: sans-serif;
+}
+input{
+    border:none;
+}
+a{
+    text-decoration:none;
+    transform:scale(1);
+    transition:transform .2s;
+    box-shadow: 0px 0px 8px 0px #0000009e;
+}
+
+a:hover{
+    transform:scale(.9);
+}
+:root{
+    --main-color:#f44336;
+}
+
+/***************************
+*********End Global*******
+***************************/
+/***************************
+*******Start container******
+***************************/
+.container{
+    max-width: 600px;
+    margin: 10px auto;
+}
+.container form{
+    background-color: #f7f7f7;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.container form input[type="text"]{
+    font-size: 18px;
+    color: #777;
+    padding: 15px;
+    width: 100%;
+    margin-right: 15px;
+    caret-color: var(--main-color);
+    transition: outline .2s;
+    outline: 2px solid transparent;
+}
+.container form input[type="text"]::placeholder{
+    color: #777;
+}
+.container form input[type="text"]:focus{
+    outline: 2px solid var(--main-color)
+}
+.container form input[type="submit"]{
+    color: #fff;
+    background-color: var(--main-color);
+    padding: 13px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor:pointer;
+    transform: scale(1);
+    transition: transform .2s;
+}
+.container form input[type="submit"]:hover{
+    transform: scale(.9);
+}
+.container .show-data{
+    background-color:#eee;
+    padding:15px;
+    font-size:17px;
+}
+.container .show-data .repo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 15px;
+    font-weight: 700;
+}
+.container .show-data .repo .name{
+    overflow: hidden;
+}
+.container .show-data .repo .parent{
+    display: flex;
+    justify-content: space-between;
+}
+.container .show-data .repo .parent *{
+    color: #fff;
+    margin: 0 2px;
+    font-size: 15px;
+    padding: 5px;
+    width: 88px;
+    text-align: center;
+    border-radius: 6px;
+}
+.container .show-data .repo .parent .file{
+    background-color: #009688;
+}
+.container .show-data .repo .parent .visit{
+    background-color: #e91e63;
+}
+/***************************
+******* End container ******
+***************************/
